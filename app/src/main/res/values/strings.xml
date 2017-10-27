@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SQLlite</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="menu_add" />
+    <string name="menu_edit" />
+    <string name="menu_delete" />
+    <string name="title_activity_grade_manipulation">gradeManipulation</string>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.valentinasparuhov.sqllite.MainActivity"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="31dp"
+            android:layout_marginTop="16dp"
+
+            android:layout_toStartOf="@+id/teFirstName"
+            android:text="First Name" />
+
+        <EditText
+            android:id="@+id/teFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvFirstName"
+            android:layout_alignBottom="@+id/tvFirstName"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btnAdd"
+            android:ems="10"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:id="@+id/tvLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvFirstName"
+            android:layout_below="@+id/teFirstName"
+            android:text="Last Name" />
+
+        <EditText
+            android:id="@+id/teLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvLastName"
+            android:layout_alignBottom="@+id/tvLastName"
+            android:layout_alignStart="@+id/btnAdd"
+            android:layout_below="@+id/teFirstName"
+            android:ems="10"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:id="@+id/tvFacNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvLastName"
+            android:layout_below="@+id/tvLastName"
+            android:layout_marginTop="16dp"
+            android:text="Faculty number" />
+
+        <EditText
+            android:id="@+id/teFacNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvFacNom"
+            android:layout_alignBottom="@+id/tvFacNom"
+            android:layout_alignStart="@+id/btnAdd"
+            android:layout_below="@+id/teLastName"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="10" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teFacNom"
+            android:layout_centerHorizontal="true"
+            android:text="Add student" />
+
+        <ListView
+            android:id="@+id/lvStudents"
+            android:layout_width="wrap_content"
+            android:layout_height="271dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnAdd"
+            android:layout_weight="0.66" />
+    </RelativeLayout>
+</LinearLayout>
